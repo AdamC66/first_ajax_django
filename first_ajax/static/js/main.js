@@ -73,9 +73,8 @@ document.addEventListener("DOMContentLoaded", function() {
             section.appendChild(dataElem)
         })
     })
-    acharButton.addEventListener('click', () =>{
-        //THIS GIVES A 404 ERROR. CANT GET IT TO WORK!
-        let request = axios.get('http://intro-ajax-api.herokuapp.com/a_char').then(function(response){
+    acarButton.addEventListener('click', () =>{
+        let request = axios.get('http://intro-ajax-api.herokuapp.com/a_car').then(function(response){
             const dataElem = document.createElement('span')
             dataElem.innerHTML = response.data
             section.appendChild(dataElem)
